@@ -1,0 +1,305 @@
+body {
+  font-family: "Nunito Sans", sans-serif;
+  scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", sans-serif;
+}
+
+a{
+  color: inherit;
+  text-decoration: none;
+}
+
+:root {
+  --main-color: #e65f78;
+}
+
+.main-color {
+  color: var(--main-color);
+}
+
+.main-bg {
+  background-color: var(--main-color);
+}
+
+.fit {
+  width: fit-content;
+}
+
+a {
+  color: inherit;
+}
+
+.main-section-header {
+  text-align: center;
+  padding-block: 0.625rem;
+}
+.main-section-header span {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+/* icons */
+.up {
+  width: 2.1875rem;
+  height: 2.1875rem;
+  bottom: 1.25rem;
+  right: 1.25rem;
+}
+
+.down {
+  width: 1.875rem;
+  height: 3.125rem;
+  border: 2px solid #fff;
+  border-radius: 100vh;
+  bottom: 1.875rem;
+  animation: updown 2s infinite alternate;
+  cursor: pointer;
+}
+.down::before {
+  content: "";
+  position: absolute;
+  width: 0.1875rem;
+  height: 0.625rem;
+  background-color: #fff;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.setting-icon {
+  width: 2.5rem;
+  height: 2.5rem;
+  top: 30%;
+}
+
+body:has(#color:checked){
+  --main-color:#F2B31A;
+}
+
+@keyframes updown {
+  0% {
+    ma: 3.75rem;
+  }
+  25% {
+    bottom: 1.875rem;
+  }
+  50% {
+    bottom: 3.75rem;
+  }
+  75% {
+    bottom: 1.875rem;
+  }
+  100% {
+    bottom: 3.75rem;
+  }
+}
+
+/* nav section */
+
+.navbar-nav .nav-link.active {
+  color: var(--main-color);
+}
+.navbar-nav {
+  --bs-nav-link-hover-color: var(--main-color);
+}
+
+/* home section */
+
+.home {
+  background-image: linear-gradient(#000000b1, #000000b1),
+    url(../images/header-bg.jpg);
+  background-size: cover;
+  background-position: center center;
+}
+
+.home .container button {
+  padding: 0.9375rem 2rem;
+}
+
+/* about section */
+
+.about ul li {
+  width: 2.5rem;
+  height: 2.5rem;
+  border: 0.125rem solid gray;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: border-color 0.5s;
+}
+
+.about ul li:hover {
+  border-color: var(--main-color);
+}
+
+.about ul li a {
+  transition: color 0.5s;
+}
+
+.about ul li:hover a {
+  color: var(--main-color);
+}
+
+/* services section */
+
+.services .row h3 {
+  position: relative;
+}
+
+.services .row h3::before {
+  content: "";
+  position: absolute;
+  width: 3.75rem;
+  height: 0.125rem;
+  background-color: var(--main-color);
+  bottom: -30%;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: width 0.5s;
+}
+
+.services .services-item:hover h3::before {
+  width: 5rem;
+}
+
+/* hire me section */
+
+.hire .container a {
+  padding: 0.9375rem 2rem;
+  --bs-btn-bg: var(--main-color);
+  --bs-btn-hover-bg: var(--main-color);
+  border: none;
+}
+
+/* client section  */
+
+.carousel-indicators [data-bs-target] {
+  background-color: var(--main-color);
+}
+
+/* portfolio section */
+
+.portfolio .nav-pills .nav-link.active {
+  --bs-nav-pills-link-active-color: white;
+  --bs-nav-pills-link-active-bg: var(--main-color);
+  --bs-nav-pills-border-radius: 100vh;
+}
+
+.portfolio .nav-pills .nav-link {
+  --bs-nav-link-color: black;
+  transition: all 0.5s;
+}
+
+.portfolio .nav-pills .nav-link:hover {
+  color: white;
+  background-color: var(--main-color);
+  border-radius: 100vh;
+}
+
+.portfolio .inner::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-color: black;
+  opacity: 0;
+  transition: all 0.5s;
+}
+
+.portfolio .inner:hover::before {
+  opacity: 0.8;
+}
+
+.portfolio .inner .inner-layer {
+  transition: all 0.5s;
+  top: 100%;
+}
+
+.portfolio .inner:hover .inner-layer {
+  top: 0;
+}
+
+/* blog section */
+
+.blog .img-container{
+  width: 95%;
+  margin: auto;
+  padding-block: .625rem;
+}
+
+/* contact section */
+
+.contact form > *:not(button){
+  width: 100%;
+}
+
+.contact form input,
+.contact form textarea{
+  padding: .625rem .9375rem;
+  border: .125rem solid #eee;
+  border-radius: .3125rem;
+}
+
+.contact form input:focus,
+.contact form textarea:focus{
+  outline: none;
+  border-color: var(--main-color);
+}
+
+.contact form textarea {
+  resize: vertical;
+  max-height: 21.875rem;
+  min-height: 9.375rem;
+}
+
+.contact .name-email input{
+  width: 50%;
+}
+
+.contact form button{
+  padding: 0.9375rem 2rem;
+  --bs-btn-bg: var(--main-color);
+  --bs-btn-hover-bg: var(--main-color);
+  border: none;
+}
+
+/* footer section */
+
+.footer .container a{
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer .container a i{
+  transition: all 0.5s;
+}
+
+.footer .container a:hover i{
+  color: var(--main-color);
+}
+
+
+
+@media screen and (max-width:992px) {
+    .contact form .name-email{
+      flex-direction: column;
+    }
+    .contact form .name-email input{
+      width: 100%;
+    }
+}

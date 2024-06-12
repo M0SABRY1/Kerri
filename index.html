@@ -1,0 +1,884 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kerri</title>
+
+    <!-- body font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <!-- header font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- bootstrap link -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+
+    <!-- font awesome link -->
+    <link rel="stylesheet" href="css/all.min.css" />
+
+    <!-- css link -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body data-bs-spy="scroll" data-bs-target="#navbar-example">
+    <!-- up icon -->
+    <div
+      class="up main-bg position-fixed z-3 d-flex justify-content-center align-items-center"
+    >
+      <a href="#home">
+        <i class="fa-solid fa-chevron-up text-white"></i>
+      </a>
+    </div>
+    <!-- setting icon -->
+    <div
+      class="setting-icon position-fixed z-3 bg-dark d-flex justify-content-center align-items-center rounded-end"
+    >
+    <label for="color">
+        <i class="fa-solid fa-gear fa-spin text-white fa-lg"></i>
+    </label>
+      <input type="checkbox" id="color" class="d-none">
+    </div>
+    <!-- nav section -->
+    <nav
+      id="navbar-example"
+      class="navbar navbar-expand-lg bg-white shadow-sm fixed-top"
+    >
+      <div class="container">
+        <a
+          class="text-capitalize fw-bolder h2 text-decoration-none"
+          href="#home"
+          >kerri</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-capitalize">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#home"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">about</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#services">services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#client">client</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#portfolio">portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#blog">blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- main section -->
+    <main
+      id="home"
+      class="home vh-100 text-white d-flex align-items-center justify-content-center position-relative"
+    >
+      <div class="container text-center d-flex flex-column gap-3">
+        <span class="text-capitalize h3">welcome</span>
+        <h1 class="fw-medium display-3">I'M <span id="element"></span></h1>
+        <p class="col-md-5 m-auto text-white-50">
+          It is a long established fact that a reader will be of a page when
+          established fact looking at its layout.
+        </p>
+        <button
+          class="text-uppercase fit m-auto btn btn-outline-light rounded-pill mt-2"
+        >
+          DOWNLOAD CV
+        </button>
+      </div>
+
+      <a
+        href="#about"
+        class="down position-absolute start-50 translate-middle-x"
+      ></a>
+    </main>
+
+    <!-- about section -->
+    <section id="about" class="about py-5">
+      <div class="container py-4">
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <div>
+              <img
+                src="images/about.jpg"
+                class="img-thumbnail"
+                alt="about-image"
+              />
+            </div>
+          </div>
+          <div class="col-lg-6 m-0 mt-sm-3">
+            <div>
+              <h2><strong>About</strong> Me</h2>
+              <h3>
+                Hello!
+                <span class="main-color fw-semibold">I'M Mohamed Sabry</span>
+              </h3>
+              <p class="text-muted">
+                It is a long established fact that a reader will be distracted
+                by the readable content of a page when looking at its layout.
+              </p>
+              <p class="text-muted">
+                The point of using Lorem Ipsum is that it has a more-or-less
+                normal distribution of letters, as opposed to using 'Content
+                here, content here', making it look like readable English.
+              </p>
+              <p class="text-muted">
+                There are many variations of passages of Lorem Ipsum available,
+                but the majority have suffered alteration in some form, by
+                injected humour, or randomised words which don't look even
+                slightly believable.
+              </p>
+              <ul class="list-unstyled d-flex gap-3 text-black">
+                <li>
+                  <a href="https://www.youtube.com/" target="_blank">
+                    <i class="fa-brands fa-dribbble"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.facebook.com/" target="_blank">
+                    <i class="fa-brands fa-facebook-f"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.linkedin.com/" target="_blank">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.twitter.com/" target="_blank">
+                    <i class="fa-brands fa-twitter"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- services section -->
+    <section id="services" class="services py-5 bg-light">
+      <div class="container py-4">
+        <div class="main-section-header col-md-5 m-auto">
+          <h2>Our <span>Services</span></h2>
+          <p class="text-muted">
+            It is a long established fact that a reader will be of a page when
+            established fact looking at its layout.
+          </p>
+        </div>
+        <div class="row g-3">
+          <div class="col-lg-4 col-md-6">
+            <div
+              class="services-item text-center border border-1 border-secondary-subtle p-4 d-flex flex-column gap-3 rounded-2"
+            >
+              <i class="fa-solid fa-chart-line display-4 main-color"></i>
+              <h3>Graphic Design</h3>
+              <p class="text-muted">
+                There are many variations of passages of but the majority have
+                suffered alteration in some form.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div
+              class="services-item rounded-2 text-center border border-1 border-secondary-subtle p-4 d-flex flex-column gap-3"
+            >
+              <i class="fa-solid fa-mug-hot display-4 main-color"></i>
+              <h3>Unlimited Color</h3>
+              <p class="text-muted">
+                There are many variations of passages of but the majority have
+                suffered alteration in some form.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div
+              class="services-item rounded-2 text-center border border-1 border-secondary-subtle p-4 d-flex flex-column gap-3"
+            >
+              <i class="fa-solid fa-cloud-arrow-up display-4 main-color"></i>
+              <h3>Media Marketing</h3>
+              <p class="text-muted">
+                There are many variations of passages of but the majority have
+                suffered alteration in some form.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div
+              class="services-item rounded-2 text-center border border-1 border-secondary-subtle p-4 d-flex flex-column gap-3"
+            >
+              <i class="fa-solid fa-wifi display-4 main-color"></i>
+              <h3>Unlimited Wifi</h3>
+              <p class="text-muted">
+                There are many variations of passages of but the majority have
+                suffered alteration in some form.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div
+              class="services-item rounded-2 text-center border border-1 border-secondary-subtle p-4 d-flex flex-column gap-3"
+            >
+              <i class="fa-solid fa-mobile-screen display-4 main-color"></i>
+              <h3>Responsive Design</h3>
+              <p class="text-muted">
+                There are many variations of passages of but the majority have
+                suffered alteration in some form.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div
+              class="services-item rounded-2 text-center border border-1 border-secondary-subtle p-4 d-flex flex-column gap-3"
+            >
+              <i class="fa-solid fa-file-pen display-4 main-color"></i>
+              <h3>Easy to customize</h3>
+              <p class="text-muted">
+                There are many variations of passages of but the majority have
+                suffered alteration in some form.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- hire section -->
+    <section class="hire py-5">
+      <div class="container text-center py-4">
+        <h2 class="fw-semibold mb-3">I Am Available For Freelancer.</h2>
+        <a
+          href="mailto:mohamedsabry11000@gmail.com"
+          class="btn btn-danger text-uppercase"
+          >hire me!</a
+        >
+      </div>
+    </section>
+
+    <!-- client section -->
+    <section id="client" class="client py-5 bg-light">
+      <div class="container py-4">
+        <div class="main-section-header col-md-5 m-auto">
+          <h2>Our <span>Client</span></h2>
+          <p class="text-muted">
+            It is a long established fact that a reader will be of a page when
+            established fact looking at its layout.
+          </p>
+        </div>
+        <div
+          id="carouselExampleIndicators"
+          class="carousel slide mt-4 text-center col-md-8 m-auto"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <i class="fa-solid fa-quote-left display-4 main-color"></i>
+              <img
+                src="images/testi-1.jpg"
+                class="img-thumbnail rounded-circle my-4 d-block m-auto"
+                alt="carousel-1"
+              />
+              <p class="text-muted lead">
+                " The point of using Lorem Ipsum is that it has a more-or-less
+                normal distribution of letters, as opposed to using 'Content
+                here."
+              </p>
+              <p class="text-muted">
+                - Ebony <span class="fw-semibold text-black">verty,</span>
+              </p>
+            </div>
+            <div class="carousel-item">
+              <i class="fa-solid fa-quote-left display-4 main-color"></i>
+              <img
+                src="images/testi-2.jpg"
+                class="img-thumbnail rounded-circle my-4 d-block m-auto"
+                alt="carousel-2"
+              />
+              <p class="text-muted lead">
+                " The point of using Lorem Ipsum is that it has a more-or-less
+                normal distribution of letters, as opposed to using 'Content
+                here."
+              </p>
+              <p class="text-muted">
+                - Ebony <span class="fw-semibold text-black">verty,</span>
+              </p>
+            </div>
+            <div class="carousel-item">
+              <i class="fa-solid fa-quote-left display-4 main-color"></i>
+              <img
+                src="images/testi-3.jpg"
+                class="img-thumbnail rounded-circle my-4 d-block m-auto"
+                alt="carousel-3"
+              />
+              <p class="text-muted lead">
+                " The point of using Lorem Ipsum is that it has a more-or-less
+                normal distribution of letters, as opposed to using 'Content
+                here."
+              </p>
+              <p class="text-muted">
+                - Ebony <span class="fw-semibold text-black">verty,</span>
+              </p>
+            </div>
+          </div>
+          <div class="carousel-indicators position-static">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- portfolio section -->
+    <section id="portfolio" class="portfolio py-5">
+      <div class="container py-4">
+        <div class="main-section-header col-md-5 m-auto">
+          <h2>Our <span>Work</span></h2>
+          <p class="text-muted">
+            It is a long established fact that a reader will be of a page when
+            established fact looking at its layout.
+          </p>
+        </div>
+        <ul
+          class="nav nav-pills mb-5 fit m-auto gap-3 mt-5"
+          id="pills-tab"
+          role="tablist"
+        >
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link active"
+              id="pills-all-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#pills-all"
+              type="button"
+              role="tab"
+              aria-controls="pills-all"
+              aria-selected="true"
+            >
+              ALL
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link"
+              id="pills-seo-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#pills-seo"
+              type="button"
+              role="tab"
+              aria-controls="pills-seo"
+              aria-selected="false"
+            >
+              SEO
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link"
+              id="pills-webdesign-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#pills-webdesign"
+              type="button"
+              role="tab"
+              aria-controls="pills-webdesign"
+              aria-selected="false"
+            >
+              WEBDESIGN
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link"
+              id="pills-work-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#pills-work"
+              type="button"
+              role="tab"
+              aria-controls="pills-work"
+              aria-selected="false"
+            >
+              WORK
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link"
+              id="pills-wordpress-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#pills-wordpress"
+              type="button"
+              role="tab"
+              aria-controls="pills-wordpress"
+              aria-selected="false"
+            >
+              WORDPRESS
+            </button>
+          </li>
+        </ul>
+        <div class="tab-content" id="pills-tabContent">
+          <div
+            class="tab-pane fade show active"
+            id="pills-all"
+            role="tabpanel"
+            aria-labelledby="pills-all-tab"
+            tabindex="0"
+          >
+            <div class="row g-4">
+              <div class="col-lg-4 col-md-6">
+                <div class="inner rounded-2 overflow-hidden position-relative">
+                  <img src="images/1.jpg" class="img-fluid" alt="portfolio-1" />
+                  <div
+                    class="inner-layer text-white position-absolute w-100 h-100 start-0 text-center d-flex flex-column justify-content-center align-items-center"
+                  >
+                    <p class="text-white-50 fw-bold">Category</p>
+                    <h3>Project Title</h3>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6">
+                <div class="inner rounded-2 overflow-hidden position-relative">
+                  <img src="images/2.jpg" class="img-fluid" alt="portfolio-2" />
+                  <div
+                    class="inner-layer text-white position-absolute w-100 h-100 start-0 text-center d-flex flex-column justify-content-center align-items-center"
+                  >
+                    <p class="text-white-50 fw-bold">Category</p>
+                    <h3>Project Title</h3>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6">
+                <div class="inner rounded-2 overflow-hidden position-relative">
+                  <img src="images/3.jpg" class="img-fluid" alt="portfolio-3" />
+                  <div
+                    class="inner-layer text-white position-absolute w-100 h-100 start-0 text-center d-flex flex-column justify-content-center align-items-center"
+                  >
+                    <p class="text-white-50 fw-bold">Category</p>
+                    <h3>Project Title</h3>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6">
+                <div class="inner rounded-2 overflow-hidden position-relative">
+                  <img src="images/4.jpg" class="img-fluid" alt="portfolio-4" />
+                  <div
+                    class="inner-layer text-white position-absolute w-100 h-100 start-0 text-center d-flex flex-column justify-content-center align-items-center"
+                  >
+                    <p class="text-white-50 fw-bold">Category</p>
+                    <h3>Project Title</h3>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6">
+                <div class="inner rounded-2 overflow-hidden position-relative">
+                  <img src="images/5.jpg" class="img-fluid" alt="portfolio-5" />
+                  <div
+                    class="inner-layer text-white position-absolute w-100 h-100 start-0 text-center d-flex flex-column justify-content-center align-items-center"
+                  >
+                    <p class="text-white-50 fw-bold">Category</p>
+                    <h3>Project Title</h3>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6">
+                <div class="inner rounded-2 overflow-hidden position-relative">
+                  <img src="images/6.jpg" class="img-fluid" alt="portfolio-6" />
+                  <div
+                    class="inner-layer text-white position-absolute w-100 h-100 start-0 text-center d-flex flex-column justify-content-center align-items-center"
+                  >
+                    <p class="text-white-50 fw-bold">Category</p>
+                    <h3>Project Title</h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="pills-seo"
+            role="tabpanel"
+            aria-labelledby="pills-seo-tab"
+            tabindex="0"
+          >
+            <div class="row g-4">
+              <div class="col-lg-4 col-md-6">
+                <div class="inner rounded-2 overflow-hidden position-relative">
+                  <img src="images/2.jpg" class="img-fluid" alt="portfolio-2" />
+                  <div
+                    class="inner-layer text-white position-absolute w-100 h-100 start-0 text-center d-flex flex-column justify-content-center align-items-center"
+                  >
+                    <p class="text-white-50 fw-bold">Category</p>
+                    <h3>Project Title</h3>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6">
+                <div class="inner rounded-2 overflow-hidden position-relative">
+                  <img src="images/3.jpg" class="img-fluid" alt="portfolio-3" />
+                  <div
+                    class="inner-layer text-white position-absolute w-100 h-100 start-0 text-center d-flex flex-column justify-content-center align-items-center"
+                  >
+                    <p class="text-white-50 fw-bold">Category</p>
+                    <h3>Project Title</h3>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-md-6">
+                <div class="inner rounded-2 overflow-hidden position-relative">
+                  <img src="images/5.jpg" class="img-fluid" alt="portfolio-5" />
+                  <div
+                    class="inner-layer text-white position-absolute w-100 h-100 start-0 text-center d-flex flex-column justify-content-center align-items-center"
+                  >
+                    <p class="text-white-50 fw-bold">Category</p>
+                    <h3>Project Title</h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="pills-webdesign"
+            role="tabpanel"
+            aria-labelledby="pills-webdesign-tab"
+            tabindex="0"
+          >
+            <div class="row g-4">
+              <div class="col-lg-4 col-md-6">
+                <div class="inner rounded-2 overflow-hidden position-relative">
+                  <img src="images/1.jpg" class="img-fluid" alt="portfolio-1" />
+                  <div
+                    class="inner-layer text-white position-absolute w-100 h-100 start-0 text-center d-flex flex-column justify-content-center align-items-center"
+                  >
+                    <p class="text-white-50 fw-bold">Category</p>
+                    <h3>Project Title</h3>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6">
+                <div class="inner rounded-2 overflow-hidden position-relative">
+                  <img src="images/2.jpg" class="img-fluid" alt="portfolio-2" />
+                  <div
+                    class="inner-layer text-white position-absolute w-100 h-100 start-0 text-center d-flex flex-column justify-content-center align-items-center"
+                  >
+                    <p class="text-white-50 fw-bold">Category</p>
+                    <h3>Project Title</h3>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6">
+                <div class="inner rounded-2 overflow-hidden position-relative">
+                  <img src="images/3.jpg" class="img-fluid" alt="portfolio-3" />
+                  <div
+                    class="inner-layer text-white position-absolute w-100 h-100 start-0 text-center d-flex flex-column justify-content-center align-items-center"
+                  >
+                    <p class="text-white-50 fw-bold">Category</p>
+                    <h3>Project Title</h3>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6">
+                <div class="inner rounded-2 overflow-hidden position-relative">
+                  <img src="images/5.jpg" class="img-fluid" alt="portfolio-5" />
+                  <div
+                    class="inner-layer text-white position-absolute w-100 h-100 start-0 text-center d-flex flex-column justify-content-center align-items-center"
+                  >
+                    <p class="text-white-50 fw-bold">Category</p>
+                    <h3>Project Title</h3>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6">
+                <div class="inner rounded-2 overflow-hidden position-relative">
+                  <img src="images/6.jpg" class="img-fluid" alt="portfolio-6" />
+                  <div
+                    class="inner-layer text-white position-absolute w-100 h-100 start-0 text-center d-flex flex-column justify-content-center align-items-center"
+                  >
+                    <p class="text-white-50 fw-bold">Category</p>
+                    <h3>Project Title</h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="pills-work"
+            role="tabpanel"
+            aria-labelledby="pills-work-tab"
+            tabindex="0"
+          >
+            <div class="row g-4">
+              <div class="col-lg-4 col-md-6">
+                <div class="inner rounded-2 overflow-hidden position-relative">
+                  <img src="images/2.jpg" class="img-fluid" alt="portfolio-2" />
+                  <div
+                    class="inner-layer text-white position-absolute w-100 h-100 start-0 text-center d-flex flex-column justify-content-center align-items-center"
+                  >
+                    <p class="text-white-50 fw-bold">Category</p>
+                    <h3>Project Title</h3>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-md-6">
+                <div class="inner rounded-2 overflow-hidden position-relative">
+                  <img src="images/4.jpg" class="img-fluid" alt="portfolio-4" />
+                  <div
+                    class="inner-layer text-white position-absolute w-100 h-100 start-0 text-center d-flex flex-column justify-content-center align-items-center"
+                  >
+                    <p class="text-white-50 fw-bold">Category</p>
+                    <h3>Project Title</h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="pills-wordpress"
+            role="tabpanel"
+            aria-labelledby="pills-wordpress-tab"
+            tabindex="0"
+          >
+            <div class="row g-4">
+              <div class="col-lg-4 col-md-6">
+                <div class="inner rounded-2 overflow-hidden position-relative">
+                  <img src="images/1.jpg" class="img-fluid" alt="portfolio-1" />
+                  <div
+                    class="inner-layer text-white position-absolute w-100 h-100 start-0 text-center d-flex flex-column justify-content-center align-items-center"
+                  >
+                    <p class="text-white-50 fw-bold">Category</p>
+                    <h3>Project Title</h3>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-md-6">
+                <div class="inner rounded-2 overflow-hidden position-relative">
+                  <img src="images/3.jpg" class="img-fluid" alt="portfolio-3" />
+                  <div
+                    class="inner-layer text-white position-absolute w-100 h-100 start-0 text-center d-flex flex-column justify-content-center align-items-center"
+                  >
+                    <p class="text-white-50 fw-bold">Category</p>
+                    <h3>Project Title</h3>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6">
+                <div class="inner rounded-2 overflow-hidden position-relative">
+                  <img src="images/4.jpg" class="img-fluid" alt="portfolio-4" />
+                  <div
+                    class="inner-layer text-white position-absolute w-100 h-100 start-0 text-center d-flex flex-column justify-content-center align-items-center"
+                  >
+                    <p class="text-white-50 fw-bold">Category</p>
+                    <h3>Project Title</h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- blog section -->
+    <section id="blog" class="blog py-5 bg-light">
+      <div class="container py-4">
+        <div class="main-section-header col-md-5 m-auto">
+          <h2>Our <span>Blog</span></h2>
+          <p class="text-muted">
+            It is a long established fact that a reader will be of a page when
+            established fact looking at its layout.
+          </p>
+        </div>
+        <div class="row g-3">
+          <div class="col-lg-4">
+            <div class="blog-item rounded-2 bg-white">
+              <div class="img-container">
+                <img
+                  src="images/blog-1.jpg"
+                  class="w-100 rounded-2"
+                  alt="item-1"
+                />
+              </div>
+              <div class="content-container p-3">
+                <h3 class="fs-5 fw-bold">There are many variations</h3>
+                <p class="text-muted">11 March 2018 <span class="main-color fw-semibold"> By Mohamed Sabry</span></p>
+                <p class="text-muted">
+                  Sit sagittis vulputate laoreet sodales tortor nulla lobortis
+                  bibendum netus primis fames. Lobortis ultricies.
+                </p>
+                <a href="" class="text-muted fw-bolder">Read More...</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="blog-item rounded-2 bg-white">
+              <div class="img-container">
+                <img
+                  src="images/blog-2.jpg"
+                  class="w-100 rounded-2"
+                  alt="item-2"
+                />
+              </div>
+              <div class="content-container p-3">
+                <h3 class="fs-5 fw-bold">There are many variations</h3>
+                <p class="text-muted">11 March 2018 <span class="main-color fw-semibold"> By Mohamed Sabry</span></p>
+                <p class="text-muted">
+                  Sit sagittis vulputate laoreet sodales tortor nulla lobortis
+                  bibendum netus primis fames. Lobortis ultricies.
+                </p>
+                <a href="" class="text-muted fw-bolder">Read More...</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="blog-item rounded-2 bg-white">
+              <div class="img-container">
+                <img
+                  src="images/blog-3.jpg"
+                  class="w-100 rounded-2"
+                  alt="item-3"
+                />
+              </div>
+              <div class="content-container p-3">
+                <h3 class="fs-5 fw-bold">There are many variations</h3>
+                <p class="text-muted">11 March 2018 <span class="main-color fw-semibold"> By Mohamed Sabry</span></p>
+                <p class="text-muted">
+                  Sit sagittis vulputate laoreet sodales tortor nulla lobortis
+                  bibendum netus primis fames. Lobortis ultricies.
+                </p>
+                <a href="" class="text-muted fw-bolder">Read More...</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- contact section -->
+    <section id="contact" class="contact py-5">
+      <div class="container">
+        <div class="main-section-header col-md-5 m-auto">
+          <h2><span>Contact</span> US</h2>
+          <p class="text-muted">
+            It is a long established fact that a reader will be of a page when
+            established fact looking at its layout.
+          </p>
+        </div>
+        <div class="row my-5">
+          <div class="col-lg-4 text-center">
+            <i class="fa-solid fa-mobile-screen h1 main-color"></i>
+            <h3>Call Us On</h3>
+            <p class="text-muted">+985 123 7856</p>
+          </div>
+          <div class="col-lg-4 text-center">
+            <i class="fa-regular fa-envelope  h1 main-color"></i>
+            <h3>Email Us At</h3>
+            <p class="text-muted">Website.Kerri@gmail.com</p>
+          </div>
+          <div class="col-lg-4 text-center">
+            <i class="fa-solid fa-location-dot h1 main-color"></i>
+            <h3>Visit Office</h3>
+            <p class="text-muted">202, Grasselli Street , Conway.</p>
+          </div>
+        </div>
+        <form class="d-flex flex-column justify-content-center align-items-center">
+          <div class="name-email d-flex gap-3 mb-4">
+            <input type="text" placeholder="Your Name...">
+            <input type="email" placeholder="Your Email...">
+          </div>
+          <input type="text" class=" mb-4" placeholder="Your Subject...">
+          <textarea class=" mb-4" placeholder="Your Massage..."></textarea>
+          <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+            <button class="btn btn-primary me-2" type="button">Send Massage</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- footer section -->
+    <section id="footer" class="footer py-5 bg-dark">
+      <div class="container py-4 d-flex flex-column justify-content-center align-items-center">
+        <div class="footer-icons text-white-50 d-flex justify-content-center align-items-center gap-4 mb-3">
+          <a href="" class="bg-secondary">
+            <i class="fa-brands fa-facebook-f"></i>
+          </a>
+          <a href="" class="bg-secondary">
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
+          <a href="" class="bg-secondary">
+            <i class="fa-brands fa-pinterest-p"></i>
+          </a>
+          <a href="" class="bg-secondary">
+            <i class="fa-brands fa-twitter"></i>
+          </a>
+        </div>
+        <p class="text-white-50">2018 - 2021 © Kerri. Design by SRBThemes.</p>
+      </div>
+    </section>
+
+    <!-- typed script -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <!-- Setup and start animation! -->
+    <script>
+      var typed = new Typed("#element", {
+        strings: ["Mohamed Sabry", "a Web developer ", "a Designer"],
+        typeSpeed: 100,
+        loop: true,
+        loopCount: Infinity,
+        backSpeed: 100,
+      });
+    </script>
+    <!-- bootstrap  bundle -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
